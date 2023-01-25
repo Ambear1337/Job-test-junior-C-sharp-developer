@@ -1,0 +1,21 @@
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\x86\sqlite3.dll
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\x64\sqlite3.dll
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\Job test.exe.config
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\Job test.exe
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\Job test.pdb
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\EntityFramework.dll
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\EntityFramework.SqlServer.dll
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\System.Data.SQLite.dll
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\System.Data.SQLite.EF6.dll
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\System.Data.SQLite.Linq.dll
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\EntityFramework.xml
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\EntityFramework.SqlServer.xml
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\System.Data.SQLite.xml
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\obj\Debug\Job test.csproj.AssemblyReference.cache
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\obj\Debug\Job_test.Form1.resources
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\obj\Debug\Job_test.Properties.Resources.resources
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\obj\Debug\Job test.csproj.GenerateResource.cache
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\obj\Debug\Job test.csproj.CoreCompileInputs.cache
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\obj\Debug\Job test.csproj.CopyComplete
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\obj\Debug\Job test.exe
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\obj\Debug\Job test.pdb
