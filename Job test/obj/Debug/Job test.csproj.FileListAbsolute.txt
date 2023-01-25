@@ -19,3 +19,22 @@ G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-develop
 G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\obj\Debug\Job test.csproj.CopyComplete
 G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\obj\Debug\Job test.exe
 G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\obj\Debug\Job test.pdb
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\runtimes\win-x86\native\e_sqlite3.dll
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\runtimes\win-x64\native\e_sqlite3.dll
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\runtimes\win-arm\native\e_sqlite3.dll
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\SQLite-net.dll
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\SQLitePCLRaw.core.dll
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\SQLitePCLRaw.nativelibrary.dll
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\SQLitePCLRaw.provider.dynamic_cdecl.dll
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\System.Buffers.dll
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\System.Memory.dll
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\System.Numerics.Vectors.dll
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\SQLite-net.xml
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\System.Buffers.xml
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\System.Memory.xml
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\System.Numerics.Vectors.xml
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\obj\Debug\Job_test.Form2.resources
+G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\obj\Debug\Job_test.UserControl1.resources

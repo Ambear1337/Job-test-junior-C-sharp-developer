@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SQLite;
+using SQLite;
 
 namespace Job_test
 {
@@ -22,13 +22,35 @@ namespace Job_test
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            db = new SQLiteConnection("Data Source=Db.db; Version=3");
-            db.Open();
+            if (System.IO.File.Exists(@"D:\G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\Db.db3"))
+            {
+                //Do nothing
+            }
+            else
+            {
+                db = new SQLiteConnection(@"D:\G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\Db.db3");
+
+                db.CreateTable<DBInfo>();
+
+                db.Close();
+            }
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            db.Close();
+            
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();
+            form.Show();
+            this.Hide();
         }
     }
 }
