@@ -37,4 +37,3 @@ G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-develop
 G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\System.Numerics.Vectors.xml
 G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\obj\Debug\Job_test.Form2.resources
-G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\obj\Debug\Job_test.UserControl1.resources
