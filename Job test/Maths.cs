@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SQLite;
 
 namespace Job_test
 {
@@ -28,22 +29,6 @@ namespace Job_test
         private bool isHotWaterMeter = false;
         private bool isColdWaterMeter = false;
 
-        //Тарифы
-        const float coldWaterRate = 35.78f;
-        const float hotWaterRate = 158.98f;
-        const float heatCarrierRate = 35.78f;
-        const float heatEnergyRate = 998.69f;
-        const float electricRate = 4.28f;
-        const float electricDayRate = 4.9f;
-        const float electricNightRate = 2.31f;
-
-        //Нормативы
-        const float coldWaterNorm = 4.85f;
-        const float hotWaterNorm = 4.01f;
-        const float electricNorm = 164f;
-        const float heatCarrierNorm = 4.01f;
-        const float heatEnergyNorm = 0.05349f;
-
         //Расчеты
         private float electricMoney;
         private float coldWaterMoney;
@@ -56,20 +41,30 @@ namespace Job_test
             electricNight = eN;
             coldWater = cW;
             hotWater = hW;
+
             isElectricMeter = eM;
             isHotWaterMeter = hWM;
             isColdWaterMeter = cWM;
+
             people = p;
         }
 
         public void Calculate()
         {
+            SQLiteConnection source = new SQLiteConnection(@"D:\G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\SourceDb.db3");
+            source.Open();
+
+            string query = "SELECT* from Student";
+            SQLiteCommand cmd = new SQLiteCommand(query, source);
+
+            DataTable dt = new DataTable();
+
             if (isElectricMeter)
             {
                 float vDay = electricDay - electricDayLast;
                 float vNight = electricNight - electricNightLast;
 
-                electricMoney = (vDay * electricDayRate) + (vNight * electricNightRate);
+                electricMoney = (vDay * ) + (vNight * electricNightRate);
             }
             else
             {

@@ -13,8 +13,6 @@ namespace Job_test
 {
     public partial class Form1 : Form
     {
-        private SQLiteConnection db;
-
         int people;
 
         bool isColdWater;
@@ -29,6 +27,7 @@ namespace Job_test
         public Form1()
         {
             InitializeComponent();
+
             textBox2.Hide();
             textBox3.Hide();
             textBox4.Hide();
@@ -37,18 +36,7 @@ namespace Job_test
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (System.IO.File.Exists(@"D:\G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\Db.db3"))
-            {
-                //Do nothing
-            }
-            else
-            {
-                db = new SQLiteConnection(@"D:\G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\Db.db3");
-
-                db.CreateTable<DBInfo>();
-
-                db.Close();
-            }
+            
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
@@ -64,6 +52,7 @@ namespace Job_test
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
             isColdWater = checkBox3.Checked;
+
             if (checkBox3.Checked)
             {
                 textBox5.Show();
@@ -77,6 +66,7 @@ namespace Job_test
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             isHotWater = checkBox1.Checked;
+
             if (checkBox1.Checked)
             {
                 textBox2.Show();
@@ -90,6 +80,7 @@ namespace Job_test
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
             isElectric = checkBox2.Checked;
+
             if (checkBox2.Checked)
             {
                 textBox3.Show();
