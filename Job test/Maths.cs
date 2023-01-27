@@ -50,14 +50,16 @@ namespace Job_test
         private float heatCarrierMoney;
         private float heatEnergyMoney;
 
-        public Maths() { }
-
-        Maths(float eD, float eN, float cW, float hW)
+        public Maths(float eD, float eN, float cW, float hW, bool eM, bool hWM, bool cWM, int p)
         {
             electricDay = eD;
             electricNight = eN;
             coldWater = cW;
             hotWater = hW;
+            isElectricMeter = eM;
+            isHotWaterMeter = hWM;
+            isColdWaterMeter = cWM;
+            people = p;
         }
 
         public void Calculate()

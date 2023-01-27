@@ -12,25 +12,14 @@ namespace Job_test
 {
     public partial class Form2 : Form
     {
-        
-        
+        Maths maths { get; set; }
+
         public Form2()
         {
             InitializeComponent();
-            Hide();
         }
 
         private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
         {
 
         }
