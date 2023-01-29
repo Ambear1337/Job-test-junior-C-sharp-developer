@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SQLite;
+using System.Data;
 
 namespace Job_test
 {
@@ -47,54 +48,6 @@ namespace Job_test
             isColdWaterMeter = cWM;
 
             people = p;
-        }
-
-        public void Calculate()
-        {
-            SQLiteConnection source = new SQLiteConnection(@"D:\G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\SourceDb.db3");
-            source.Open();
-
-            string query = "SELECT* from Student";
-            SQLiteCommand cmd = new SQLiteCommand(query, source);
-
-            DataTable dt = new DataTable();
-
-            if (isElectricMeter)
-            {
-                float vDay = electricDay - electricDayLast;
-                float vNight = electricNight - electricNightLast;
-
-                electricMoney = (vDay * ) + (vNight * electricNightRate);
-            }
-            else
-            {
-                electricMoney = people * electricNorm;
-            }
-
-            if (isColdWaterMeter)
-            {
-                float v = coldWater - coldWaterLast;
-
-                coldWaterMoney = v * coldWaterRate;
-            }
-            else
-            {
-                coldWaterMoney = people * coldWaterNorm;
-            }
-
-            if (isHotWaterMeter)
-            {
-                float vHeatCarrier = hotWater - hotWaterLast;
-                float vHeatEnergy = vHeatCarrier * heatCarrierNorm;
-
-                heatCarrierMoney = vHeatCarrier * heatCarrierRate;
-                heatEnergyMoney = vHeatEnergy * heatEnergyRate;
-            }
-            else
-            {
-                heatCarrierMoney = people * heatCarrierNorm;
-                heatEnergyMoney = people * heatEnergyNorm;
-            }
         }
 
         public void GetLastData(float eDL, float eNL, float cWL, float hWL)

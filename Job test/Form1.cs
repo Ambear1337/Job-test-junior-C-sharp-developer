@@ -36,7 +36,7 @@ namespace Job_test
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
@@ -115,9 +115,10 @@ namespace Job_test
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Maths maths = new Maths(electricDay, electricNight, coldWater, hotWater, isElectric,isHotWater, isColdWater, people);
+            Form2 form2 = new Form2();
 
-            maths.Calculate();
+            this.Hide();
+            form2.Show();
         }
     }
 }

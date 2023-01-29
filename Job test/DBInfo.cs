@@ -11,15 +11,16 @@ namespace Job_test
     {
         [PrimaryKey, AutoIncrement]
         public int id { get; set; }
-        public string Column1 { get; set; }
-        public string Column2 { get; set; }
+        public string ServiceType { get; set; }
+        public string ServiceRate { get; set; }
+        public string ServiceNorm { get; set; }
 
-        public DBInfo() { }
-
-        DBInfo(string C1, string C2)
+        public string FullListOfServices
         {
-            Column1 = C1;
-            Column2 = C2;
+            get
+            {
+                return $"{ ServiceType } { ServiceRate } { ServiceNorm } ";
+            }
         }
     }
 }
