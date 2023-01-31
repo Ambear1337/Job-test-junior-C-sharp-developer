@@ -17,6 +17,14 @@ namespace Job_test
         static bool IsHotWater = false;
         static bool IsElectric = false;
 
+        static float currentColdWater;
+        static float currentHotWater;
+        static float currentElectric;
+
+        static float previousColdWater;
+        static float previousHotWater;
+        static float previousElectric;
+
         static int people = 1;
 
         static int answer;
@@ -24,59 +32,7 @@ namespace Job_test
         [STAThread]
         static void Main()
         {
-            Console.WriteLine("Расчет оплаты ЖКХ");
-            Console.WriteLine("Имеется ли у Вас прибор учета по услуге ХВС?");
-            Console.WriteLine("1. Да");
-            Console.WriteLine("2. Нет");
-            answer = Choose("Напишите '1' или '2'.");
-            if (answer == 1)
-                IsColdWater = true;
-            else if (answer == 2)
-                IsColdWater = false;
-            else
-                return;
-
-            Console.WriteLine("Имеется ли у Вас прибор учета по услуге ГВС?");
-            Console.WriteLine("1. Да");
-            Console.WriteLine("2. Нет");
-
-            answer = Choose("Напишите '1' или '2'.");
-            if (answer == 1)
-                IsHotWater = true;
-            else if (answer == 2)
-                IsHotWater = false;
-            else
-                return;
-
-            Console.WriteLine("Имеется ли у Вас прибор учета по услуге ЭЭ?");
-            Console.WriteLine("1. Да");
-            Console.WriteLine("2. Нет");
-            answer = Choose("Напишите '1' или '2'.");
-            if (answer == 1)
-                IsElectric = true;
-            else if (answer == 2)
-                IsElectric = false;
-            else
-                return;
-
-            Console.WriteLine("Сколько людей у Вас в помещении?");
-
-            answer = 0;
-            while (answer == 0)
-            {
-                if (int.TryParse(Console.ReadLine(), out answer))
-                {
-                    people = answer;
-                }
-                else
-                {
-                    Console.WriteLine("Напишите целое число (например, 1).");
-                    answer = 0;
-                }
-            }
-
-            Console.WriteLine(people);
-            Console.ReadLine();
+            Start();
         }
 
         static void CreateTable()
@@ -112,6 +68,227 @@ namespace Job_test
             }
 
             return answer;
+        }
+
+        static void Start()
+        {
+            Console.WriteLine("Расчет оплаты ЖКХ");
+
+            Console.WriteLine(" ");
+
+            Console.WriteLine("Имеется ли у Вас прибор учета по услуге ХВС?");
+            Console.WriteLine("1. Да");
+            Console.WriteLine("2. Нет");
+            answer = Choose("Напишите '1' или '2'.");
+            if (answer == 1)
+                IsColdWater = true;
+            else if (answer == 2)
+                IsColdWater = false;
+            else
+                return;
+
+            Console.WriteLine(" ");
+
+            Console.WriteLine("Имеется ли у Вас прибор учета по услуге ГВС?");
+            Console.WriteLine("1. Да");
+            Console.WriteLine("2. Нет");
+
+            answer = Choose("Напишите '1' или '2'.");
+            if (answer == 1)
+                IsHotWater = true;
+            else if (answer == 2)
+                IsHotWater = false;
+            else
+                return;
+
+            Console.WriteLine(" ");
+
+            Console.WriteLine("Имеется ли у Вас прибор учета по услуге ЭЭ?");
+            Console.WriteLine("1. Да");
+            Console.WriteLine("2. Нет");
+            answer = Choose("Напишите '1' или '2'.");
+            if (answer == 1)
+                IsElectric = true;
+            else if (answer == 2)
+                IsElectric = false;
+            else
+                return;
+
+            Console.WriteLine(" ");
+
+            Console.WriteLine("Сколько людей у Вас в помещении?");
+
+            answer = 0;
+            while (answer == 0)
+            {
+                if (int.TryParse(Console.ReadLine(), out answer))
+                {
+                    people = answer;
+                }
+                else
+                {
+                    Console.WriteLine("Напишите целое число (например, 1).");
+                    answer = 0;
+                }
+            }
+
+            Console.WriteLine(" ");
+
+            Console.WriteLine("Давайте проверим, указанные Вами данные.");
+
+            Console.WriteLine(" ");
+
+            Console.WriteLine("Прибор учета по услуге ХВС = " + IsColdWater);
+            Console.WriteLine("Прибор учета по услуге ГВС = " + IsHotWater);
+            Console.WriteLine("Прибор учета по услуге ЭЭ = " + IsElectric);
+            Console.WriteLine("Количество людей в помещении: " + people);
+
+            Console.WriteLine(" ");
+
+            Console.WriteLine("Все верно?");
+            answer = Choose("Напишите '1' или '2'.");
+            if (answer == 1)
+            {
+                Console.WriteLine(" ");
+                NextStep();
+            }
+            else if (answer == 2)
+            {
+                Console.WriteLine(" ");
+                Start();
+            }
+            else
+                return;
+        }
+        static void NextStep()
+        {
+            float answer = 0f;
+            
+            Console.WriteLine("Укажите текущие показания с каждого из имеющихся у Вас приборов учета.");
+
+            Console.WriteLine(" ");
+
+            if (IsColdWater)
+            {
+                Console.WriteLine("Укажите текущие показания с прибора учета по услуге ХВС.");
+
+                while (answer == 0f)
+                {
+                    if (float.TryParse(Console.ReadLine(), out answer))
+                    {
+                        currentColdWater = answer;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Напишите числовое значение, если оно дробное, пишите через запятую (например, '3,14').");
+                        answer = 0f;
+                    }
+                }
+            }
+
+            Console.WriteLine(" ");
+
+            answer = 0f;
+
+            if (IsHotWater)
+            {
+                Console.WriteLine("Укажите текущие показания с прибора учета по услуге ГВС.");
+
+                while (answer == 0f)
+                {
+                    if (float.TryParse(Console.ReadLine(), out answer))
+                    {
+                        currentHotWater = answer;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Напишите числовое значение, если оно дробное, пишите через запятую (например, '3,14').");
+                        answer = 0f;
+                    }
+                }
+            }
+
+            Console.WriteLine(" ");
+
+            answer = 0f;
+
+            if (IsElectric)
+            {
+                Console.WriteLine("Укажите текущие показания с прибора учета по услуге ЭЭ.");
+
+                while (answer == 0f)
+                {
+                    if (float.TryParse(Console.ReadLine(), out answer))
+                    {
+                        currentElectric = answer;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Напишите числовое значение, если оно дробное, пишите через запятую (например, '3,14').");
+                        answer = 0f;
+                    }
+                }
+            }
+
+            Console.WriteLine(" ");
+
+            Console.WriteLine("Давайте проверим, указанные Вами данные.");
+
+            Console.WriteLine(" ");
+
+            if (IsColdWater)
+                Console.WriteLine("Показания с прибора учета ХВС = " + currentColdWater);
+            if (IsHotWater)
+                Console.WriteLine("Показания с прибора учета ГВС = " + currentHotWater);
+            if (IsElectric)
+                Console.WriteLine("Показания с прибора учета ЭЭ = " + currentElectric);
+
+            Console.WriteLine(" ");
+
+            Console.WriteLine("Все верно?");
+            answer = Choose("Напишите '1' или '2'.");
+            if (answer == 1)
+            {
+                Console.WriteLine(" ");
+                Calculate();
+            }    
+            else if (answer == 2)
+            {
+                Console.WriteLine(" ");
+                NextStep();
+            }
+            else
+                return;
+        }
+
+        static void Calculate()
+        {
+            if (IsColdWater)
+            {
+
+            }
+            else
+            {
+
+            }
+
+            if (IsHotWater)
+            {
+
+            }
+            else
+            {
+
+            }
+
+            if (IsElectric)
+            {
+
+            }
+            else
+            {
+
+            }
         }
     }
 }
