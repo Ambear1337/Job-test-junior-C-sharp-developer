@@ -10,6 +10,6 @@ namespace Job_test
 {
     public class SQLiteDataAccess
     {
-        public static List<ServiceModel>
+       
     }
 }

@@ -12,7 +12,6 @@ G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-develop
 G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\EntityFramework.SqlServer.xml
 G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\System.Data.SQLite.xml
 G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\obj\Debug\Job test.csproj.AssemblyReference.cache
-G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\obj\Debug\Job_test.Form1.resources
 G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\obj\Debug\Job_test.Properties.Resources.resources
 G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\obj\Debug\Job test.csproj.GenerateResource.cache
 G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\obj\Debug\Job test.csproj.CoreCompileInputs.cache
@@ -36,4 +35,3 @@ G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-develop
 G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\System.Memory.xml
 G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\System.Numerics.Vectors.xml
 G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-G:\Projects\VS Code\Job test junior C# developer\Job-test-junior-C-sharp-developer\Job test\obj\Debug\Job_test.Form2.resources
